@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="MPU9250_13">
+    <link name="link">
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>1.67</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.67</iyy>
+          <iyz>0</iyz>
+          <izz>1.67</izz>
+        </inertia>
+      </inertial>
+      <!-- <collision name="collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.004 0.004 0.001</size>
+          </box>
+        </geometry>
+
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+            <ode>
+              <kp>10000000.0</kp>
+              <kd>1.0</kd>
+              <min_depth>0.0</min_depth>
+              <max_vel>0.0</max_vel>
+            </ode>
+          </contact>
+        </surface>
+        
+      </collision> -->
+      <visual name="visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.004 0.004 0.001</size>
+          </box>
+        </geometry>
+	<material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>__default__</uri>
+          </script>
+        </material>
+      </visual>
+      <sensor name='IMU9250' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>1000</update_rate>
+        <visualize>1</visualize>
+        <topic>__default_topic__</topic>
+        <imu/>
+
+    <!-- <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
+	  <topicName>imu_data</topicName>
+	  <bodyName>link</bodyName>
+    <frameName>rplidar_link</frameName>
+	  <updateRateHZ>100.0</updateRateHZ>
+	  <gaussianNoise>0.0</gaussianNoise>
+	  <xyzOffset>0 0 0</xyzOffset>
+	  <rpyOffset>0 0 0</rpyOffset>
+    </plugin> -->
+
+	<pose>0 0 0 0 0 0</pose>
+      </sensor>
+    </link>
+          <plugin name="imu_plugin" filename="libhector_gazebo_ros_imu.so">
+            <updateRate>1000</updateRate>
+            <bodyName>link</bodyName>
+            <topicName>/mpu9250_13</topicName>
+            <serviceName>/mpu9250_13/calibrate</serviceName>
+            <accelOffset>0.0 0.0 0.0</accelOffset>
+            <accelDrift>0.0 0.0 0.0</accelDrift>
+            <accelDriftFrequency>0.0 0.0 0.0</accelDriftFrequency>
+            <accelGaussianNoise> 0.00804 0.00804 0.00804</accelGaussianNoise>
+            <rateOffset>0.0 0.0 0.0</rateOffset>
+            <rateDrift>0.0 0.0 0.0</rateDrift>
+            <rateDriftFrequency>0.0 0.0 0.0</rateDriftFrequency>
+            <rateGaussianNoise> 0.1004 0.1004 0.1004</rateGaussianNoise>
+            <headingOffset>0.0</headingOffset>
+            <headingDrift>0.0</headingDrift>
+            <headingDriftFrequency>0.0</headingDriftFrequency>
+            <headingGaussianNoise>0.0</headingGaussianNoise>
+            <rpyOffset>0.0 0.0 0.0</rpyOffset>
+            <xyzOffset>0.0 0.0 0.0</xyzOffset>
+            <gaussianNoise>0.0</gaussianNoise>
+        </plugin>
+  </model>
+</sdf>

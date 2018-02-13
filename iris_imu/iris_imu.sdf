@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version='1.5'>
+  <model name='iris_imu'>
+
+    <include>
+      <uri>model://iris</uri>
+    </include> 
+
+    <include>
+      <uri>model://imu_cube</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <joint name="cube_joint" type="fixed">
+      <child>cube::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+  
+  </model>
+</sdf>
+<!-- vim: set noet fenc=utf-8 ff=unix sts=0 sw=4 ts=4 : -->
+

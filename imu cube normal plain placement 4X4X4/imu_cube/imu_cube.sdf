@@ -1,0 +1,597 @@
+<?xml version="1.0" ?>
+<sdf version='1.5'>
+  <model name='imu_cube'>
+
+
+<!-- 1st ----- top   4st ----- bottom -->
+
+<!-- 1st layer  -->
+    <include>
+      <uri>model://MPU6050_0</uri>
+      <pose>-0.03 0.03 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_0_joint" type="fixed">
+      <child>6050_0::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_1</uri>
+      <pose>-0.01 0.03 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_1_joint" type="fixed">
+      <child>6050_1::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_2</uri>
+      <pose>0.01 0.03 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_2_joint" type="fixed">
+      <child>6050_2::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_3</uri>
+      <pose>0.03 0.03 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_3_joint" type="fixed">
+      <child>6050_3::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_4</uri>
+      <pose>-0.03 0.01 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_4_joint" type="fixed">
+      <child>6050_4::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_5</uri>
+      <pose>-0.01 0.01 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_5_joint" type="fixed">
+      <child>6050_5::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_6</uri>
+      <pose>0.01 0.01 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_6_joint" type="fixed">
+      <child>6050_6::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_7</uri>
+      <pose>0.03 0.01 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_7_joint" type="fixed">
+      <child>6050_7::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_8</uri>
+      <pose>-0.03 -0.01 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_8_joint" type="fixed">
+      <child>6050_8::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_9</uri>
+      <pose>-0.01 -0.01 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_9_joint" type="fixed">
+      <child>6050_9::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_10</uri>
+      <pose>0.01 -0.01 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_10_joint" type="fixed">
+      <child>6050_10::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_11</uri>
+      <pose>0.03 -0.01 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_11_joint" type="fixed">
+      <child>6050_11::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_12</uri>
+      <pose>-0.03 -0.03 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_12_joint" type="fixed">
+      <child>6050_12::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_13</uri>
+      <pose>-0.01 -0.03 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_13_joint" type="fixed">
+      <child>6050_13::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_14</uri>
+      <pose>0.01 -0.03 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_14_joint" type="fixed">
+      <child>6050_14::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6050_15</uri>
+      <pose>0.03 -0.03 0.03 0 0 0</pose>
+    </include>
+    <joint name="6050_15_joint" type="fixed">
+      <child>6050_15::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+
+<!-- 2st layer -->
+
+    <include>
+      <uri>model://MPU6500_0</uri>
+      <pose>-0.03 0.03 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_0_joint" type="fixed">
+      <child>6500_0::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_1</uri>
+      <pose>-0.01 0.03 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_1_joint" type="fixed">
+      <child>6500_1::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_2</uri>
+      <pose>0.01 0.03 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_2_joint" type="fixed">
+      <child>6500_2::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_3</uri>
+      <pose>0.03 0.03 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_3_joint" type="fixed">
+      <child>6500_3::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_4</uri>
+      <pose>-0.03 0.01 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_4_joint" type="fixed">
+      <child>6500_4::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_5</uri>
+      <pose>-0.01 0.01 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_5_joint" type="fixed">
+      <child>6500_5::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_6</uri>
+      <pose>0.01 0.01 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_6_joint" type="fixed">
+      <child>6500_6::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_7</uri>
+      <pose>0.03 0.01 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_7_joint" type="fixed">
+      <child>6500_7::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_8</uri>
+      <pose>-0.03 -0.01 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_8_joint" type="fixed">
+      <child>6500_8::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_9</uri>
+      <pose>-0.01 -0.01 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_9_joint" type="fixed">
+      <child>6500_9::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_10</uri>
+      <pose>0.01 -0.01 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_10_joint" type="fixed">
+      <child>6500_10::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_11</uri>
+      <pose>0.03 -0.01 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_11_joint" type="fixed">
+      <child>6500_11::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_12</uri>
+      <pose>-0.03 -0.03 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_12_joint" type="fixed">
+      <child>6500_12::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_13</uri>
+      <pose>-0.01 -0.03 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_13_joint" type="fixed">
+      <child>6500_13::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_14</uri>
+      <pose>0.01 -0.03 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_14_joint" type="fixed">
+      <child>6500_14::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU6500_15</uri>
+      <pose>0.03 -0.03 0.01 0 0 0</pose>
+    </include>
+    <joint name="6500_15_joint" type="fixed">
+      <child>6500_15::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+    
+
+<!-- 3st layer -->
+
+    <include>
+      <uri>model://MPU9150_0</uri>
+      <pose>-0.03 0.03 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_0_joint" type="fixed">
+      <child>9150_0::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_1</uri>
+      <pose>-0.01 0.03 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_1_joint" type="fixed">
+      <child>9150_1::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_2</uri>
+      <pose>0.01 0.03 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_2_joint" type="fixed">
+      <child>9150_2::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_3</uri>
+      <pose>0.03 0.03 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_3_joint" type="fixed">
+      <child>9150_3::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_4</uri>
+      <pose>-0.03 0.01 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_4_joint" type="fixed">
+      <child>9150_4::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_5</uri>
+      <pose>-0.01 0.01 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_5_joint" type="fixed">
+      <child>9150_5::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_6</uri>
+      <pose>0.01 0.01 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_6_joint" type="fixed">
+      <child>9150_6::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_7</uri>
+      <pose>0.03 0.01 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_7_joint" type="fixed">
+      <child>9150_7::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_8</uri>
+      <pose>-0.03 -0.01 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_8_joint" type="fixed">
+      <child>9150_8::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_9</uri>
+      <pose>-0.01 -0.01 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_9_joint" type="fixed">
+      <child>9150_9::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_10</uri>
+      <pose>0.01 -0.01 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_10_joint" type="fixed">
+      <child>9150_10::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_11</uri>
+      <pose>0.03 -0.01 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_11_joint" type="fixed">
+      <child>9150_11::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_12</uri>
+      <pose>-0.03 -0.03 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_12_joint" type="fixed">
+      <child>9150_12::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_13</uri>
+      <pose>-0.01 -0.03 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_13_joint" type="fixed">
+      <child>9150_13::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_14</uri>
+      <pose>0.01 -0.03 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_14_joint" type="fixed">
+      <child>9150_14::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9150_15</uri>
+      <pose>0.03 -0.03 -0.01 0 0 0</pose>
+    </include>
+    <joint name="9150_15_joint" type="fixed">
+      <child>9150_15::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+<!-- 4st layer -->
+
+    <include>
+      <uri>model://MPU9250_0</uri>
+      <pose>-0.03 0.03 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_0_joint" type="fixed">
+      <child>9250_0::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_1</uri>
+      <pose>-0.01 0.03 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_1_joint" type="fixed">
+      <child>9250_1::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_2</uri>
+      <pose>0.01 0.03 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_2_joint" type="fixed">
+      <child>9250_2::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_3</uri>
+      <pose>0.03 0.03 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_3_joint" type="fixed">
+      <child>9250_3::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_4</uri>
+      <pose>-0.03 0.01 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_4_joint" type="fixed">
+      <child>9250_4::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_5</uri>
+      <pose>-0.01 0.01 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_5_joint" type="fixed">
+      <child>9250_5::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_6</uri>
+      <pose>0.01 0.01 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_6_joint" type="fixed">
+      <child>9250_6::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_7</uri>
+      <pose>0.03 0.01 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_7_joint" type="fixed">
+      <child>9250_7::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_8</uri>
+      <pose>-0.03 -0.01 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_8_joint" type="fixed">
+      <child>9250_8::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_9</uri>
+      <pose>-0.01 -0.01 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_9_joint" type="fixed">
+      <child>9250_9::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_10</uri>
+      <pose>0.01 -0.01 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_10_joint" type="fixed">
+      <child>9250_10::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_11</uri>
+      <pose>0.03 -0.01 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_11_joint" type="fixed">
+      <child>9250_11::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_12</uri>
+      <pose>-0.03 -0.03 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_12_joint" type="fixed">
+      <child>9250_12::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_13</uri>
+      <pose>-0.01 -0.03 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_13_joint" type="fixed">
+      <child>9250_13::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_14</uri>
+      <pose>0.01 -0.03 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_14_joint" type="fixed">
+      <child>9250_14::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+    <include>
+      <uri>model://MPU9250_15</uri>
+      <pose>0.03 -0.03 -0.03 0 0 0</pose>
+    </include>
+    <joint name="9250_15_joint" type="fixed">
+      <child>9250_15::link</child>
+      <parent>iris::base_link</parent>
+    </joint>
+
+
+  </model>
+</sdf>
+<!-- vim: set noet fenc=utf-8 ff=unix sts=0 sw=4 ts=4 : -->
+
