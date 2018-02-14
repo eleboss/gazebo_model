@@ -75,7 +75,7 @@
       </sensor>
     </link>
           <plugin name="imu_plugin" filename="libhector_gazebo_ros_imu.so">
-            <updateRate>1000</updateRate>
+            <updateRate>100</updateRate>
             <bodyName>link</bodyName>
             <topicName>/mpu6050_9</topicName>
             <serviceName>/mpu6050_9/calibrate</serviceName>
